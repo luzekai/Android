@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/simple_adapter"
+            android:parentActivityName=".MainActivity"
+            android:name=".Simple_Adapter" />
+        <activity android:label="@string/alert_dialog"
+            android:parentActivityName=".MainActivity"
+            android:name=".Alert_Dialog" />
+        <activity android:label="@string/action_mode"
+            android:name=".Action_Mode" />
+        <activity android:label="@string/xml_define_menu"
+            android:parentActivityName=".MainActivity"
+            android:name=".XMLDefineMenu">
+        </activity>
+    </application>
+
+</manifest>
